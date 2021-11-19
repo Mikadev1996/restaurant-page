@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url('./Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MontserratBold";
+    src: url('./Montserrat-Bold.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#TOP {
+    width: 35px;
+    height: 35px;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    background: red;
+}
+
+#title {
+    height: 65px;
+    width: 100%;
+    border-bottom: 1px solid darkgrey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 22px;
+}
+
+#page-bar {
+    height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid darkgrey;
+
+}
+
+li {
+    margin: 35px;
+    display: inline;
+}
+
+#main-img {
+    background-image: url("https://images.ctfassets.net/o6514hijae09/4UY7wnzYbZ1QQK1cYZ7uSN/a6c811ee4f290b52a114e8039a1d9bb1/markus-spiske-Skf7HxARcoc-unsplash.jpg?w=800&h=533&q=50&fm=webp");
+    height: 500px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+#sub-title-1 {
+    color: white;
+    font-family: MontserratBold, sans-serif;
+    font-size: 5rem;
+    text-align: center;
+}
+
+#centre {
+    max-width: 48rem;
+}
