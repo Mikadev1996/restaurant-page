@@ -16,8 +16,8 @@
 }
 
 #TOP {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
 }
 
 body {
@@ -31,7 +31,7 @@ body {
     background: red;
 }
 
-#title {
+.title-div {
     height: 65px;
     width: 100%;
     border-bottom: 1px solid darkgrey;
@@ -61,9 +61,18 @@ li {
     padding: 10px;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
+#description {
+    line-height: 1.5;
+}
+
+.main {
+    margin: 50px;
+}
 #sub-title-1 {
     color: white;
     font-family: MontserratBold, sans-serif;
@@ -71,6 +80,47 @@ li {
     text-align: center;
 }
 
+#sub-title-2 {
+    color: black;
+    font-family: MontserratBold, sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
 #centre {
     max-width: 48rem;
+    color: white;
+    text-align: center;
+}
+
+#centre p {
+    margin: 20px;
+}
+
+#book {
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#sub-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+}
+
+.sub-main-item {
+    margin: 20px;
+}
+
+#sub-description {
+    line-height: 1.5;
+    text-align: center;
+}
+
+#sub-content {
+    max-width: 35rem;
 }
