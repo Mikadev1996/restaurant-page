@@ -15,6 +15,11 @@
     margin: 0;
 }
 
+#nav-bar {
+    border-top: 10px solid;
+    border-image: linear-gradient(139deg, #141e30, #243b55, #4CA1AF) 3
+}
+
 #TOP {
     width: 25px;
     height: 25px;
@@ -110,6 +115,8 @@ li {
     justify-content: center;
     align-items: center;
     padding: 4rem 1rem;
+
+    border-bottom: 1px solid darkgrey;
 }
 
 .sub-main-item {

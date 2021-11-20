@@ -3,10 +3,9 @@ console.log("webpack setup test");
 
 function component() {
     const element = document.createElement('div');
-    element.innerHTML = "Hello";
+    element.innerHTML = "";
 
 
     return element;
 }
 
-document.body.appendChild(component());
