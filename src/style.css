@@ -10,18 +10,11 @@
     src: url('./Montserrat-Bold.ttf') format('truetype');
 }
 
-html {
-    height: 99.4vh;
-}
+
 
 * {
     padding: 0;
     margin: 0;
-}
-
-html {
-    border-bottom: 10px solid;
-    border-image: linear-gradient(139deg, #141e30, #243b55, #4CA1AF) 3
 }
 
 #nav-bar {
@@ -29,13 +22,12 @@ html {
     border-image: linear-gradient(139deg, #141e30, #243b55, #4CA1AF) 3
 }
 
-#TOP {
+#odin {
     width: 25px;
     height: 25px;
 }
 
 body {
-    overflow: hidden;
     font-family: Montserrat, sans-serif;
     background: whitesmoke;
     display: flex;
@@ -94,14 +86,14 @@ li {
 .main {
     margin: 50px;
 }
-#sub-title-1 {
+#centre-heading {
     color: white;
     font-family: MontserratBold, sans-serif;
     font-size: 5rem;
     text-align: center;
 }
 
-#sub-title-2 {
+#info-title {
     color: black;
     font-family: MontserratBold, sans-serif;
     font-size: 22px;
@@ -125,7 +117,7 @@ li {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-#sub-main {
+#info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -135,16 +127,16 @@ li {
     border-bottom: 1px solid darkgrey;
 }
 
-.sub-main-item {
+.info-item {
     margin: 20px;
 }
 
-#sub-description {
+#info-description {
     line-height: 1.5;
     text-align: center;
 }
 
-#sub-content {
+#info-content {
     max-width: 35rem;
 }
 

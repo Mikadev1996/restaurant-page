@@ -1,11 +1,9 @@
 import './style.css';
-console.log("webpack setup test");
-
-function component() {
-    const element = document.createElement('div');
-    element.innerHTML = "";
+import {footer, mainDiv, navBar} from "./mainPage";
 
 
-    return element;
-}
+const content = document.querySelector("#content");
 
+content.appendChild(navBar());
+content.appendChild(mainDiv());
+content.appendChild(footer());
