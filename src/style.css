@@ -10,9 +10,18 @@
     src: url('./Montserrat-Bold.ttf') format('truetype');
 }
 
+html {
+    height: 99.4vh;
+}
+
 * {
     padding: 0;
     margin: 0;
+}
+
+html {
+    border-bottom: 10px solid;
+    border-image: linear-gradient(139deg, #141e30, #243b55, #4CA1AF) 3
 }
 
 #nav-bar {
@@ -26,10 +35,12 @@
 }
 
 body {
+    overflow: hidden;
     font-family: Montserrat, sans-serif;
     background: whitesmoke;
     display: flex;
     flex-direction: column;
+
 }
 
 .content {
@@ -55,9 +66,14 @@ body {
 
 }
 
-li {
+.page-list {
     margin: 35px;
     display: inline;
+}
+
+li {
+    list-style: none;
+    line-height: 1.5;
 }
 
 #main-img {
@@ -130,4 +146,29 @@ li {
 
 #sub-content {
     max-width: 35rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+#footer-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    max-width: 52rem;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+}
+
+#github-logo {
+    margin-top: 25px;
+    height: 50px;
+    width: 50px;
 }
