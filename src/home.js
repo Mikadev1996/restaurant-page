@@ -17,13 +17,15 @@ function navBar() {
     const li2 = document.createElement("li");
     const li3 = document.createElement("li");
 
-    li1.textContent = "Page 1";
+    li1.textContent = "Home";
     li1.classList.add("page-list")
+    li1.id = "home";
 
-    li2.textContent = "Page 2";
+    li2.textContent = "Menu";
     li2.classList.add("page-list")
+    li2.id = "menu";
 
-    li3.textContent = "Page 3";
+    li3.textContent = "Contact";
     li3.classList.add("page-list")
 
     ul.append(li1, li2, li3);
@@ -37,7 +39,7 @@ function navBar() {
     return nav;
 }
 
-function mainDiv() {
+function body() {
     const main = document.createElement("main");
 
     function centre() {
@@ -90,8 +92,8 @@ function mainDiv() {
 
         const infoDescription = document.createElement("p");
         infoDescription.textContent = "Relied upon by more than 11 million developers worldwide," +
-            " npm is committed to making JavaScript development elegant, productive, and safe. " +
-            "The free npm Registry has become the center of JavaScript code sharing," +
+            " spaghetti is committed to making JavaScript development elegant, productive, and safe. " +
+            "The free spaghetti Registry has become the center of JavaScript code sharing," +
             " and with more than one million packages, the largest software registry in the world." +
             " Our other tools and services take the Registry, and the work you do around it, to the next level.";
         infoDescription.id = "info-description";
@@ -175,4 +177,4 @@ function footer() {
     return footer;
 }
 
-export {navBar, mainDiv, footer};
+export {navBar, body, footer};

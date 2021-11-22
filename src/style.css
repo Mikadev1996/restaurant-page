@@ -17,6 +17,11 @@
     margin: 0;
 }
 
+html {
+    border-bottom: 10px solid;
+    border-image: linear-gradient(139deg, #141e30, #243b55, #4CA1AF) 3
+}
+
 #nav-bar {
     border-top: 10px solid;
     border-image: linear-gradient(139deg, #141e30, #243b55, #4CA1AF) 3
@@ -66,6 +71,7 @@ body {
 li {
     list-style: none;
     line-height: 1.5;
+    padding: 10px;
 }
 
 #main-img {
