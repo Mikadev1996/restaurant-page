@@ -17,8 +17,9 @@ menu.onclick = openMenu;
 
 function openHome() {
     if (state !== "home") {
+        document.body.innerHTML = "";
         console.log("home");
-        document.body.append(body(), footer());
+        document.body.append(navBar(),body(), footer());
 
         state = "home";
         const menu = document.getElementById("menu");
@@ -29,12 +30,17 @@ function openHome() {
 function openMenu() {
     if (state !== "menu") {
         console.log("menu");
-        menuPage();
-        document.body.append(navBar());
+        document.body.append(navBar(), menuPage(), footer());
 
 
         state = "menu";
         const home  = document.getElementById("home");
         home.onclick = openHome;
+    }
+}
+
+function openContact() {
+    if (state !== "contact") {
+
     }
 }

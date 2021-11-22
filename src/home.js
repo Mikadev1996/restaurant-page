@@ -1,5 +1,6 @@
 
 function navBar() {
+
     const nav = document.createElement("nav");
     nav.id = "nav-bar";
 

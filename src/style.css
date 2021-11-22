@@ -18,8 +18,8 @@
 }
 
 html {
-    border-bottom: 10px solid;
-    border-image: linear-gradient(139deg, #141e30, #243b55, #4CA1AF) 3
+    width: 100vw;
+    height: 100vh;
 }
 
 #nav-bar {
@@ -38,10 +38,6 @@ body {
     display: flex;
     flex-direction: column;
 
-}
-
-.content {
-    background: red;
 }
 
 .title-div {
@@ -149,6 +145,8 @@ li {
 footer {
     display: flex;
     justify-content: center;
+    border-bottom: 10px solid;
+    border-image: linear-gradient(139deg, #141e30, #243b55, #4CA1AF) 3;
 }
 
 #footer-div {
@@ -169,4 +167,54 @@ footer {
     margin-top: 25px;
     height: 50px;
     width: 50px;
+}
+
+#food-menu {
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+    width: 100vw;
+    display: flex;
+    height: 660px;
+    flex-direction: column;
+    align-items: center;
+
+    border-bottom: 1px solid darkgrey;
+
+}
+
+h4 {
+    text-align: center;
+    font-family: MontserratBold, sans-serif;
+    font-size: 38px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 2rem;
+}
+
+#food-items {
+    padding-top: 2rem;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.food {
+    padding: 20px;
+}
+
+#food-items p {
+    max-width: 32rem;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+
+hr {
+    margin-bottom: 15px;
+    width: 300px;
+}
+
+h5 {
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
 }
