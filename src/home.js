@@ -28,6 +28,7 @@ function navBar() {
 
     li3.textContent = "Contact";
     li3.classList.add("page-list")
+    li3.id = "contact";
 
     ul.append(li1, li2, li3);
     pages.appendChild(ul);
@@ -120,6 +121,7 @@ function footer() {
     gitHub.classList.add("footer-item");
     const link = document.createElement("a");
     link.href= "https://github.com/Mikadev1996";
+    link.target = "blank";
 
     const gitHubLogo = document.createElement("img");
     gitHubLogo.id = "github-logo";

@@ -1,6 +1,7 @@
 import './style.css';
 import {footer, body, navBar} from "./home";
 import {menuPage} from "./menu";
+import {contactPage} from "./contact";
 
 let state = "home";
 
@@ -15,6 +16,9 @@ home.onclick = openHome;
 const menu = document.getElementById("menu");
 menu.onclick = openMenu;
 
+const contact = document.getElementById("contact");
+contact.onclick = openContact;
+
 function openHome() {
     if (state !== "home") {
         document.body.innerHTML = "";
@@ -24,6 +28,9 @@ function openHome() {
         state = "home";
         const menu = document.getElementById("menu");
         menu.onclick = openMenu;
+
+        const contact = document.getElementById("contact");
+        contact.onclick = openContact;
     }
 }
 
@@ -36,11 +43,23 @@ function openMenu() {
         state = "menu";
         const home  = document.getElementById("home");
         home.onclick = openHome;
+
+        const contact = document.getElementById("contact");
+        contact.onclick = openContact;
     }
 }
 
 function openContact() {
     if (state !== "contact") {
 
+        console.log("contact");
+        state = "contact";
+        document.body.append(navBar(), contactPage(), footer());
+
+        const menu = document.getElementById("menu");
+        menu.onclick = openMenu;
+
+        const home  = document.getElementById("home");
+        home.onclick = openHome;
     }
 }
